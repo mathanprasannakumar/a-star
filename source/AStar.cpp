@@ -64,6 +64,17 @@ void AStar::Generator::clearCollisions()
     walls.clear();
 }
 
+void AStar::Generator::addObstacle(Vec2i & back,bool & back_added)
+{
+   auto it = std::find(walls.begin(),walls.end(),back);
+   if(it == walls.end())
+   {
+    back_added = true;
+    addCollision(back);
+   }
+
+}
+
 AStar::CoordinateList AStar::Generator::findPath(Vec2i source_, Vec2i target_,unsigned int curr_dir)
 {
     Node *current = nullptr;
@@ -71,20 +82,25 @@ AStar::CoordinateList AStar::Generator::findPath(Vec2i source_, Vec2i target_,un
     openSet.reserve(100);
     closedSet.reserve(100);
     openSet.push_back(new Node(source_));
-
+    Vec2i back;
+    bool back_added;
     /* adding wallblock to one node behind the current vehicle direction*/
     switch(curr_dir) {
         case 0:
-            walls.push_back({source_.x,source_.y-1});
+            back = {source_.x,source_.y-1}; 
+            addObstacle(back,back_added);
             break;
         case 1:
-            walls.push_back({source_.x-1,source_.y});
+            back = {source_.x-1,source_.y};
+            addObstacle(back,back_added);
             break;
         case 2:
-            walls.push_back({source_.x,source_.y+1});
+            back = {source_.x,source_.y+1};
+            addObstacle(back,back_added);
             break;
         case 3:
-            walls.push_back({source_.x+1,source_.y});
+            back = {source_.x+1,source_.y};
+            addObstacle(back,back_added);
             break;
     }
     while (!openSet.empty()) {
@@ -130,10 +146,8 @@ AStar::CoordinateList AStar::Generator::findPath(Vec2i source_, Vec2i target_,un
             }
         }
         /* for removing the wallblock after the src is being visited*/
-        auto back_it =  walls.begin();
-        if(back_it !=walls.end())
-            walls.erase(back_it);
-
+        if(back_added)
+            removeCollision(back);
     }
 
     CoordinateList path;

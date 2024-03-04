@@ -16,7 +16,7 @@ void find_current_go(unsigned int& need_to_go,unsigned int &n_need_to_go,unsigne
 int main()
 {
     AStar::Generator generator;
-    generator.setWorldSize({3, 3});
+    generator.setWorldSize({7, 5});
     generator.setHeuristic(AStar::Heuristic::euclidean);
     generator.setDiagonalMovement(false);
 
@@ -25,6 +25,22 @@ int main()
     ORIEN[1] = {3,0,1,2};
     ORIEN[2] = {2,3,0,1};
     ORIEN[3] = {1,2,3,0};
+
+    /** adding obstacle */
+    generator.addCollision({1,1});
+    generator.addCollision({2,1});
+    generator.addCollision({1,2});
+    generator.addCollision({2,2});
+    generator.addCollision({1,3});
+    generator.addCollision({2,3});
+    generator.addCollision({4,3});
+    generator.addCollision({5,3});
+    generator.addCollision({4,1});
+    generator.addCollision({5,1});
+    generator.addCollision({6,1});
+    generator.addCollision({4,0});
+    generator.addCollision({5,0});
+    generator.addCollision({6,0});
 
     unsigned int CURRENT_ORIENT = 0;
     unsigned int n_need_to_go;

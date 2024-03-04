@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/shankar/short_algo/a-star/source/AStar.cpp" "CMakeFiles/a-star.dir/source/AStar.cpp.o" "gcc" "CMakeFiles/a-star.dir/source/AStar.cpp.o.d"
+  "/home/shankar/a-star/source/AStar.cpp" "CMakeFiles/a-star.dir/source/AStar.cpp.o" "gcc" "CMakeFiles/a-star.dir/source/AStar.cpp.o.d"
   )
 
 # Targets to which this target links.

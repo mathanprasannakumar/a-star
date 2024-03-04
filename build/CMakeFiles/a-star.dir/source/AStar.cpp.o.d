@@ -1,8 +1,7 @@
 CMakeFiles/a-star.dir/source/AStar.cpp.o: \
- /home/shankar/short_algo/a-star/source/AStar.cpp \
- /usr/include/stdc-predef.h \
- /home/shankar/short_algo/a-star/source/AStar.hpp \
- /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_algobase.h \
+ /home/shankar/a-star/source/AStar.cpp /usr/include/stdc-predef.h \
+ /home/shankar/a-star/source/AStar.hpp /usr/include/c++/11/vector \
+ /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \

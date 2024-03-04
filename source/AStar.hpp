@@ -51,6 +51,7 @@ namespace AStar
         void setHeuristic(HeuristicFunction heuristic_);
         CoordinateList findPath(Vec2i source_, Vec2i target_,unsigned int curr_dir);
         void addCollision(Vec2i coordinates_);
+        void addObstacle(Vec2i &back,bool &back_added);
         void removeCollision(Vec2i coordinates_);
         void clearCollisions();
 

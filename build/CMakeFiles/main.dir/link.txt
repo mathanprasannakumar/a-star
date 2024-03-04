@@ -1,1 +1,1 @@
-/usr/bin/g++  -std=c++11 -g -rdynamic CMakeFiles/main.dir/main.cpp.o -o main  liba-star.a 
+/usr/bin/c++  -std=c++11 -rdynamic CMakeFiles/main.dir/main.cpp.o -o main  liba-star.a 

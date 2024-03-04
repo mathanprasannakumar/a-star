@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/shankar/short_algo/a-star
+CMAKE_SOURCE_DIR = /home/shankar/a-star
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/shankar/short_algo/a-star/build
+CMAKE_BINARY_DIR = /home/shankar/a-star/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/a-star.dir/depend.make
@@ -72,16 +72,16 @@ include CMakeFiles/a-star.dir/flags.make
 CMakeFiles/a-star.dir/source/AStar.cpp.o: CMakeFiles/a-star.dir/flags.make
 CMakeFiles/a-star.dir/source/AStar.cpp.o: ../source/AStar.cpp
 CMakeFiles/a-star.dir/source/AStar.cpp.o: CMakeFiles/a-star.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shankar/short_algo/a-star/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/a-star.dir/source/AStar.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/a-star.dir/source/AStar.cpp.o -MF CMakeFiles/a-star.dir/source/AStar.cpp.o.d -o CMakeFiles/a-star.dir/source/AStar.cpp.o -c /home/shankar/short_algo/a-star/source/AStar.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shankar/a-star/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/a-star.dir/source/AStar.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/a-star.dir/source/AStar.cpp.o -MF CMakeFiles/a-star.dir/source/AStar.cpp.o.d -o CMakeFiles/a-star.dir/source/AStar.cpp.o -c /home/shankar/a-star/source/AStar.cpp
 
 CMakeFiles/a-star.dir/source/AStar.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/a-star.dir/source/AStar.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shankar/short_algo/a-star/source/AStar.cpp > CMakeFiles/a-star.dir/source/AStar.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shankar/a-star/source/AStar.cpp > CMakeFiles/a-star.dir/source/AStar.cpp.i
 
 CMakeFiles/a-star.dir/source/AStar.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/a-star.dir/source/AStar.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shankar/short_algo/a-star/source/AStar.cpp -o CMakeFiles/a-star.dir/source/AStar.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shankar/a-star/source/AStar.cpp -o CMakeFiles/a-star.dir/source/AStar.cpp.s
 
 # Object files for target a-star
 a__star_OBJECTS = \
@@ -93,7 +93,7 @@ a__star_EXTERNAL_OBJECTS =
 liba-star.a: CMakeFiles/a-star.dir/source/AStar.cpp.o
 liba-star.a: CMakeFiles/a-star.dir/build.make
 liba-star.a: CMakeFiles/a-star.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/shankar/short_algo/a-star/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library liba-star.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/shankar/a-star/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library liba-star.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/a-star.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/a-star.dir/link.txt --verbose=$(VERBOSE)
 
@@ -106,6 +106,6 @@ CMakeFiles/a-star.dir/clean:
 .PHONY : CMakeFiles/a-star.dir/clean
 
 CMakeFiles/a-star.dir/depend:
-	cd /home/shankar/short_algo/a-star/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/shankar/short_algo/a-star /home/shankar/short_algo/a-star /home/shankar/short_algo/a-star/build /home/shankar/short_algo/a-star/build /home/shankar/short_algo/a-star/build/CMakeFiles/a-star.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/shankar/a-star/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/shankar/a-star /home/shankar/a-star /home/shankar/a-star/build /home/shankar/a-star/build /home/shankar/a-star/build/CMakeFiles/a-star.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/a-star.dir/depend
 

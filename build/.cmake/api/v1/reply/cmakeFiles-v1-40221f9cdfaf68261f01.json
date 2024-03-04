@@ -125,8 +125,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "/home/shankar/short_algo/a-star/build",
-		"source" : "/home/shankar/short_algo/a-star"
+		"build" : "/home/shankar/a-star/build",
+		"source" : "/home/shankar/a-star"
 	},
 	"version" : 
 	{

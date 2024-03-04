@@ -1,9 +1,8 @@
 {
-	"archive" : {},
 	"artifacts" : 
 	[
 		{
-			"path" : "liba-star.a"
+			"path" : "main"
 		}
 	],
 	"backtrace" : 1,
@@ -11,7 +10,8 @@
 	{
 		"commands" : 
 		[
-			"add_library",
+			"add_executable",
+			"target_link_libraries",
 			"include_directories"
 		],
 		"files" : 
@@ -26,11 +26,17 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 7,
+				"line" : 9,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
+				"file" : 0,
+				"line" : 10,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
 				"file" : 0,
 				"line" : 6,
 				"parent" : 0
@@ -43,14 +49,14 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : " -std=c++11 -g"
+					"fragment" : " -std=c++11"
 				}
 			],
 			"includes" : 
 			[
 				{
-					"backtrace" : 2,
-					"path" : "/home/shankar/short_algo/a-star/source"
+					"backtrace" : 3,
+					"path" : "/home/shankar/a-star/source"
 				}
 			],
 			"language" : "CXX",
@@ -60,9 +66,36 @@
 			]
 		}
 	],
-	"id" : "a-star::@6890427a1f51a3e7e1df",
-	"name" : "a-star",
-	"nameOnDisk" : "liba-star.a",
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "a-star::@6890427a1f51a3e7e1df"
+		}
+	],
+	"id" : "main::@6890427a1f51a3e7e1df",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-std=c++11",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-rdynamic",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "liba-star.a",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "main",
+	"nameOnDisk" : "main",
 	"paths" : 
 	{
 		"build" : ".",
@@ -83,9 +116,9 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "source/AStar.cpp",
+			"path" : "main.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],
-	"type" : "STATIC_LIBRARY"
+	"type" : "EXECUTABLE"
 }
