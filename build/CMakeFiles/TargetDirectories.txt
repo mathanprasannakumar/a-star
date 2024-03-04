@@ -1,0 +1,4 @@
+/home/shankar/short_algo/a-star/build/CMakeFiles/a-star.dir
+/home/shankar/short_algo/a-star/build/CMakeFiles/main.dir
+/home/shankar/short_algo/a-star/build/CMakeFiles/edit_cache.dir
+/home/shankar/short_algo/a-star/build/CMakeFiles/rebuild_cache.dir

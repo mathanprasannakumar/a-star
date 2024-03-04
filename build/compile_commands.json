@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/shankar/short_algo/a-star/build",
+  "command": "/usr/bin/g++  -I/home/shankar/short_algo/a-star/source  -std=c++11 -g -o CMakeFiles/a-star.dir/source/AStar.cpp.o -c /home/shankar/short_algo/a-star/source/AStar.cpp",
+  "file": "/home/shankar/short_algo/a-star/source/AStar.cpp"
+},
+{
+  "directory": "/home/shankar/short_algo/a-star/build",
+  "command": "/usr/bin/g++  -I/home/shankar/short_algo/a-star/source  -std=c++11 -g -o CMakeFiles/main.dir/main.cpp.o -c /home/shankar/short_algo/a-star/main.cpp",
+  "file": "/home/shankar/short_algo/a-star/main.cpp"
+}
+]
